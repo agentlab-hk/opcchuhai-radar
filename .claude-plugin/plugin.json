@@ -39,7 +39,7 @@
     "aisa_api_key": {
       "type": "string",
       "title": "AIsa API key",
-      "description": "Pays for the radar's lookups: X posts, Google Ads volumes, DataForSEO Trends and the model. recent_leads works without it. A key: https://go.aisa.one/yansen-zhu (referral link)",
+      "description": "Pays for the radar's lookups: X posts, Google Ads volumes, DataForSEO Trends and the model. recent_leads works without it. A key: https://console.aisa.one/sign-up?ref=XUvLja7kEBbw (referral link)",
       "sensitive": true,
       "default": ""
     },

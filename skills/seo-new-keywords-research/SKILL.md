@@ -13,7 +13,7 @@ A name ("SynthID Detector") has a short life as a keyword and belongs to someone
 
 1. Run the pinned release, never a clone of the repository: `uvx new-term-radar==0.5.2 <command> …` (uv fetches that version from PyPI into a throwaway environment; it needs Python 3.10 or newer and nothing else). Without uv: `python3 -m pip install new-term-radar==0.5.2`, then `new-term-radar <command> …`.
 2. Run every command from one working directory: `$NEW_TERM_RADAR_DIR` if set, else `~/new-term-radar` (create it if it is missing).
-3. An AIsa key must be available, as `AISA_API_KEY` or from the AIsa CLI (`aisa login` stores it in `~/.aisa`): every lookup here is paid through it. Without it, stop and say so. A key comes from https://go.aisa.one/yansen-zhu.
+3. An AIsa key must be available, as `AISA_API_KEY` or from the AIsa CLI (`aisa login` stores it in `~/.aisa`): every lookup here is paid through it. Without it, stop and say so. A key comes from https://console.aisa.one/sign-up?ref=XUvLja7kEBbw.
 4. `GOANYAPI_API_KEY` is optional (a key comes from https://goanyapi.com/r/ga-95708898fb). With it the table also holds what people really searched together with each name, and reads the bigger rows from one country's settled series. Without it, tell the user that a "flat" reading is weaker evidence (see below).
 5. With no `config.json` in that directory the radar runs on the example list of X accounts and sitemaps it ships with, and says so. Tell the user, and that a `config.json` written there replaces it (the example to start from: https://github.com/zhuyansen/new-term-radar/blob/v0.5.2/config.example.json).
 
