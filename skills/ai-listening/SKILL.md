@@ -11,7 +11,7 @@ Produce one report: the names of new AI models, products and repositories seen i
 
 1. Run the pinned release, never a clone of the repository: `uvx new-term-radar==0.5.2 <command> …` (uv fetches that version from PyPI into a throwaway environment; it needs Python 3.10 or newer and nothing else). Without uv: `python3 -m pip install new-term-radar==0.5.2`, then `new-term-radar <command> …`.
 2. Run every command from one working directory, so yesterday's snapshots are there today: `$NEW_TERM_RADAR_DIR` if set, else `~/new-term-radar` (create it if it is missing).
-3. Check an AIsa key is available: `AISA_API_KEY`, or the AIsa CLI logged in (`ls ~/.aisa/key`). Without one, only the free signals run (Hugging Face, GitHub, sitemaps), no X posts are read, and nothing judges which terms are names. Say so in the report. A key comes from https://go.aisa.one/yansen-zhu.
+3. Check an AIsa key is available: `AISA_API_KEY`, or the AIsa CLI logged in (`ls ~/.aisa/key`). Without one, only the free signals run (Hugging Face, GitHub, sitemaps), no X posts are read, and nothing judges which terms are names. Say so in the report. A key comes from https://console.aisa.one/sign-up?ref=XUvLja7kEBbw.
 4. With no `config.json` in that directory the radar runs on the example list of X accounts and sitemaps it ships with, and says so. Tell the user, and that a `config.json` written there replaces it (the example to start from: https://github.com/zhuyansen/new-term-radar/blob/v0.5.2/config.example.json).
 
 ## Cost and time: say it, then wait for a yes
